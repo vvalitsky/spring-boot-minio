@@ -1,0 +1,16 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 8MB
+      max-request-size: 8MB
+
+storage:
+  minio:
+    url: ${STORAGE_MINIO_URL:http://127.0.0.1:9000}
+    accessKey: ${STORAGE_MINIO_ACCESS_KEY:minio}
+    secretKey: ${STORAGE_MINIO_SECRET_KEY:minio123}
+
+server:
+  port: ${SERVER_PORT:5150}
+
+debug: ${SPRING_DEBUG:false}
